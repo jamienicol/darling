@@ -3,7 +3,7 @@
 	url = ../darling-libdispatch.git
 [submodule "src/external/libcxx"]
 	path = src/external/libcxx
-	url = ../darling-libcxx.git
+	url = https://github.com/mozilla/darling-libcxx.git
 [submodule "src/external/libcxxabi"]
 	path = src/external/libcxxabi
 	url = ../darling-libcxxabi.git
