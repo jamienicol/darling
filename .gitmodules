@@ -378,7 +378,7 @@
 	url = ../darling-pyobjc.git
 [submodule "src/external/darlingserver"]
 	path = src/external/darlingserver
-	url = ../darlingserver.git
+	url = https://github.com/mozilla/darlingserver.git
 [submodule "src/external/libmalloc"]
 	path = src/external/libmalloc
 	url = ../darling-libmalloc.git

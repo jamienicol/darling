@@ -27,6 +27,11 @@ install(TARGETS darling DESTINATION bin
     WORLD_READ WORLD_EXECUTE
     SETUID)
 
+add_executable(darling-run darling-run.c)
+
+# deliberately not SETUID: standalone mode needs no privileges at all
+install(TARGETS darling-run DESTINATION bin)
+
 add_executable(rtsig rtsig.c)
 add_custom_command(OUTPUT rtsig.h DEPENDS rtsig COMMAND ${CMAKE_CURRENT_BINARY_DIR}/rtsig rtsig.h COMMENT "Determining available RT signals")
 add_custom_target(rtsig_h DEPENDS rtsig.h)
